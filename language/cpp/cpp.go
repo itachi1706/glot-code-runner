@@ -1,8 +1,8 @@
 package cpp
 
 import (
-	"github.com/prasmussen/glot-code-runner/cmd"
-	"github.com/prasmussen/glot-code-runner/util"
+	"github.com/itachi1706/glot-code-runner/cmd"
+	"github.com/itachi1706/glot-code-runner/util"
 	"path/filepath"
 )
 
