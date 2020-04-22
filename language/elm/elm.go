@@ -1,8 +1,9 @@
 package elm
 
 import (
-	"github.com/itachi1706/glot-code-runner/cmd"
 	"path/filepath"
+
+	"github.com/itachi1706/glot-code-runner/cmd"
 )
 
 func Run(files []string, stdin string) (string, string, error) {
@@ -15,7 +16,7 @@ func Run(files []string, stdin string) (string, string, error) {
 	}
 
 	// Compile elm to javascript
-	stdout, stderr, err = cmd.Run(workDir, "elm make", files[0], "--output", "elm.js")
+	stdout, stderr, err = cmd.Run(workDir, "elm", "make", files[0], "--output", "elm.js")
 	if err != nil {
 		return stdout, stderr, err
 	}
